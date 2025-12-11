@@ -8,6 +8,14 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.11" />
+      <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.11" />
+      <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.0.1" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BananaProtocol.Application\BananaProtocol.Application.csproj" />
     </ItemGroup>
 
 </Project>
