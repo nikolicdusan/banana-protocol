@@ -1,14 +1,13 @@
-using BananaProtocol.Application.Common.Interfaces;
 using BananaProtocol.Application.Common.Mappers;
 using BananaProtocol.Contracts.Token;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BananaProtocol.API.Token;
 
-public class TokenController(ITokenProvider tokenProvider) : ApiControllerBase
+public class TokenController : ApiControllerBase
 {
     [HttpPost]
-    public async Task<IActionResult> CreateToken(CreateTokenRequest request, CancellationToken cancellationToken)
+    public async Task<IActionResult> CreateTokenAsync(CreateTokenRequest request, CancellationToken cancellationToken)
     {
         var command = request.ToCommand();
         var result = await Sender.Send(command, cancellationToken);
