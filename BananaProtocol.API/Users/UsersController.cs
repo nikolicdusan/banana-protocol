@@ -1,12 +1,15 @@
+using BananaProtocol.API.Common.Authorization;
 using BananaProtocol.Application.Common.Mappers;
 using BananaProtocol.Application.Users;
 using BananaProtocol.Contracts.Resources;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BananaProtocol.API.Users;
 
 public class UsersController : ApiControllerBase
 {
+    [Authorize(Policy = PolicyName.RequireAdmin)]
     [HttpGet("{id:int}", Name = nameof(GetUserById))]
     public async Task<IActionResult> GetUserById(
         int id,
