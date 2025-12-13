@@ -1,5 +1,3 @@
-using BananaProtocol.Domain.Enums;
-
 namespace BananaProtocol.Application.Users;
 
 public class UserDto
@@ -10,5 +8,5 @@ public class UserDto
     public string? FirstName { get; set; }
     public string? LastName { get; set; }
     public string? Address { get; set; }
-    public RoleType Role { get; set; }
+    public string Role { get; set; }
 }

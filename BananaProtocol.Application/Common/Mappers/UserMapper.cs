@@ -26,6 +26,6 @@ public static class UserMapper
             FirstName = user.FirstName,
             LastName = user.LastName,
             Address = user.Address,
-            Role = user.Role
+            Role = user.Role.ToString(),
         };
 }

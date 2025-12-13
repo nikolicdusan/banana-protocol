@@ -19,7 +19,7 @@ internal class CreateTokenCommandHandler(
         var user = await GetUserAsync(request.Email);
         VerifyPassword(user, request.Password);
 
-        return tokenProvider.GenerateToken(user.Id, user.Email);
+        return tokenProvider.GenerateToken(user.Id, user.Email, new List<string> { user.Role.ToString() });
     }
 
     private async Task<User> GetUserAsync(string email) =>
