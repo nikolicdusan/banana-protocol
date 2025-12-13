@@ -1,5 +1,5 @@
 using BananaProtocol.Application.Common.Mappers;
-using BananaProtocol.Contracts.Token;
+using BananaProtocol.Contracts.Resources;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BananaProtocol.API.Token;

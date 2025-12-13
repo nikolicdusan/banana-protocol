@@ -1,4 +1,4 @@
-namespace BananaProtocol.Contracts.Token;
+namespace BananaProtocol.Contracts.Resources;
 
 public class CreateTokenRequest
 {

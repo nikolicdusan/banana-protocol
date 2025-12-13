@@ -12,11 +12,13 @@ public class TokenProvider(IOptions<JwtOptions> options) : ITokenProvider
 {
     private readonly JwtOptions _jwtOptions = options.Value;
 
-    public string GenerateToken(Guid userId, string email, IEnumerable<string>? roles = null)
+    public string GenerateToken(object userId, string email, IEnumerable<string>? roles = null)
     {
+        ArgumentNullException.ThrowIfNull(userId, nameof(userId));
+
         List<Claim> claims =
         [
-            new(JwtRegisteredClaimNames.Sub, userId.ToString()),
+            new(JwtRegisteredClaimNames.Sub, userId.ToString()!),
             new(JwtRegisteredClaimNames.Email, email)
         ];
 

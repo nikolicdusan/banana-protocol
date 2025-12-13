@@ -1,5 +1,5 @@
 using BananaProtocol.Application.Token;
-using BananaProtocol.Contracts.Token;
+using BananaProtocol.Contracts.Resources;
 
 namespace BananaProtocol.Application.Common.Mappers;
 
