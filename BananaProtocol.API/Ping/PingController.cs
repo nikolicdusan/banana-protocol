@@ -1,7 +1,6 @@
-using BananaProtocol.API.Common.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BananaProtocol.API.Controllers;
+namespace BananaProtocol.API.Ping;
 
 public class PingController(ILogger<PingController> logger) : ApiControllerBase
 {

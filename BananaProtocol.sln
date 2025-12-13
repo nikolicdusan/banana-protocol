@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BananaProtocol.Infrastructu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BananaProtocol.Application", "BananaProtocol.Application\BananaProtocol.Application.csproj", "{818FB9DD-868F-4B02-BC4D-14F5C5C50D9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BananaProtocol.Contracts", "BananaProtocol.Contracts\BananaProtocol.Contracts.csproj", "{335832F3-32EF-4E31-9604-DE2AC62AA97A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,7 @@ Global
 		{2305CE33-5649-469C-836E-37085A8B533E} = {C5E2F6C9-0DF7-429A-86A4-FF870C9E7177}
 		{BEAA26DB-18B0-450C-A80B-28CCAB863FFE} = {C5E2F6C9-0DF7-429A-86A4-FF870C9E7177}
 		{818FB9DD-868F-4B02-BC4D-14F5C5C50D9C} = {C5E2F6C9-0DF7-429A-86A4-FF870C9E7177}
+		{335832F3-32EF-4E31-9604-DE2AC62AA97A} = {C5E2F6C9-0DF7-429A-86A4-FF870C9E7177}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C5E9E29F-DE42-4D13-94FB-3A89F69ADED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,5 +41,9 @@ Global
 		{818FB9DD-868F-4B02-BC4D-14F5C5C50D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{818FB9DD-868F-4B02-BC4D-14F5C5C50D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{818FB9DD-868F-4B02-BC4D-14F5C5C50D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{335832F3-32EF-4E31-9604-DE2AC62AA97A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335832F3-32EF-4E31-9604-DE2AC62AA97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335832F3-32EF-4E31-9604-DE2AC62AA97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335832F3-32EF-4E31-9604-DE2AC62AA97A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
